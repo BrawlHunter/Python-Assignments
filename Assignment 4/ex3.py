@@ -1,0 +1,8 @@
+file = open(r"C:\Users\dell\Desktop\akshay.txt", 'r+')
+data = file.read()
+data1 = data.upper()
+file.seek(0)
+file.truncate()
+file.write(data1)
+file.close()
+# print("%r is converted to %r" % (data, data1))
